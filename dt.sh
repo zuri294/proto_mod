@@ -360,7 +360,7 @@ print_message() {
         "EXIT")    prefix="[SAIR]" ;;
     esac
     local color="${COLORS[$type]:-${COLORS[INFO]}}"
-    printf '%b%s %s%b\n' "${color}" "${prefix}" "${message}" "${COLORS[RESET]}" >&2
+    printf '%b%s %b%b\n' "${color}" "${prefix}" "${message}" "${COLORS[RESET]}" >&2
 }
 
 format_prompt() {
