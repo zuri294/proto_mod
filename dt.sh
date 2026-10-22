@@ -233,7 +233,7 @@ download_binary() {
 
   [[ "${arch}" == "linux-amd64" ]] || { print_message "ERROR" "Apenas amd64/x86_64 suportado."; exit 1; }
 
-  local download_url="https://www.dropbox.com/scl/fi/3h8y1r0oq8ug3r1d7rkmn/proto-server?rlkey=crbjmwc29xrw3oua6yit7915r&st=h4b7t2rs&dl=1"
+  local download_url="https://github.com/zuri294/proto_mod/raw/refs/heads/main/proto-server.bin"
   local expected_sha256="12b4eb5deea0de0a8ed53ed008ec1ff7c1ebe9617f50e4d0fad12093bc858baf"
 
   print_message "INFO" "Baixando binário sem validação de token (apenas amd64)..."
